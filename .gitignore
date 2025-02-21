@@ -1,0 +1,6 @@
+# Web build folder
+game/build
+
+# Python
+__pycache__/
+*.py[cod]
