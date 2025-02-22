@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import asyncio
-import pygame_sdl2 as pg
+import pygame as pg
 
 pg.init()
 screen = pg.display.set_mode((640, 480))
@@ -11,6 +11,8 @@ async def main():
 	running = True
 	while running:
 		screen.fill((0, 0, 0))
+		
+		screen.fill((255, 0, 0), pg.Rect(50, 50, 100, 100))
 		pg.display.flip()
 
 		clock.tick(60)
